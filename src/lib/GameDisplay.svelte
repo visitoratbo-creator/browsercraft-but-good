@@ -86,18 +86,18 @@
 		showElement(display);
 		showElement(timer);
 
-		#const timerChecker = setInterval(() => {
-		#	timeLeft--;
-		#	if (timeLeft < 0) {
-		#		clearInterval(timerChecker);
-		#		hideElement(display);
-		#		hideElement(timer);
-		#		showElement(timeoutInfo);
-		#		document.exitPointerLock();
-		#		document.activeElement?.blur();
-		#		tryPlausible('EndDemo');
-		#	}
-		#}, 1000);
+		//#const timerChecker = setInterval(() => {
+		//#	timeLeft--;
+		//#	if (timeLeft < 0) {
+		//#		clearInterval(timerChecker);
+		//#		hideElement(display);
+		//#		hideElement(timer);
+		//#		showElement(timeoutInfo);
+		//#		document.exitPointerLock();
+		//#		document.activeElement?.blur();
+		//#		tryPlausible('EndDemo');
+		//#	}
+		//#}, 1000);
 
 		tryPlausible('Play');
 		await cheerpjRunMain('net.minecraft.client.Minecraft', pathJarLibs);
